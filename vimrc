@@ -1,3 +1,17 @@
+" neobundle
+if 0 | endif
+if &compatible
+	set nocompatible
+endif
+set runtimepath+=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'tomasr/molokai'
+NeoBundleCheck
+call neobundle#end()
+
 " http://vim.wikia.com/wiki/Example_vimrc
 " Features
 set nocompatible
@@ -19,7 +33,7 @@ set laststatus=2
 set confirm
 set visualbell
 set t_vb=
-set mouse=a
+"#set mouse=a
 set cmdheight=2
 set number
 set notimeout ttimeout ttimeoutlen=200
@@ -32,13 +46,5 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 
 " color
-" https://github.com/tomasr/molokai
 colorscheme molokai
 highlight Normal ctermbg=none
-
-" powerline
-"python from powerline.vim import setup as powerline_setup
-"ython powerline_setup()
-"ython del powerline_setup
-"et showtabline=2
-"et noshowmode
