@@ -1,11 +1,13 @@
 " neobundle
+" mkdir ~/.vim/bundle
+" git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle
 if 0 | endif
 if &compatible
 	set nocompatible
 endif
 set runtimepath+=~/.vim/bundle/neobundle.vim/
 call neobundle#begin(expand('~/.vim/bundle/'))
-NeoBundle 'Shougo/neobundle.vim'
+NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'tomasr/molokai'
@@ -48,3 +50,6 @@ nnoremap <C-L> :nohl<CR><C-L>
 " color
 colorscheme molokai
 highlight Normal ctermbg=none
+
+" paste
+set paste
