@@ -13,6 +13,7 @@ NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'tomasr/molokai'
+NeoBundle 'ConradIrwin/vim-bracketed-paste'
 NeoBundleCheck
 call neobundle#end()
 
@@ -37,7 +38,7 @@ set laststatus=2
 set confirm
 set visualbell
 set t_vb=
-"#set mouse=a
+set mouse=a
 set cmdheight=2
 set number
 set notimeout ttimeout ttimeoutlen=200
@@ -65,7 +66,7 @@ nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
 " color
 colorscheme molokai
 highlight Normal ctermbg=none
+set cursorline
 
-" paste
-set paste
-
+" mapping
+nnoremap <C-c> :<C-u>set cursorline!<CR>
