@@ -32,4 +32,5 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
 " color
+colorscheme pablo
 set background=dark
