@@ -31,6 +31,6 @@ set tabstop=4
 map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
-" color
+" Color
 colorscheme pablo
 set background=dark

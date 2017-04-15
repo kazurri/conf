@@ -49,7 +49,10 @@ set tabstop=4
 " Mappings
 map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
-
+nnoremap <C-c> :<C-u>set cursorline!<CR>
+" Color
+colorscheme molokai
+highlight Normal ctermbg=none
 " Unite
 nnoremap [unite] <Nop>
 nmap <Space> [unite]
@@ -62,11 +65,3 @@ nnoremap <silent> [unite]r :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> [unite]m :<C-u>Unite file_mru<CR>
 nnoremap <silent> [unite]l :<C-u>Unite bookmark<CR>
 nnoremap <silent> [unite]a :<C-u>UniteBookmarkAdd<CR>
-
-" color
-colorscheme molokai
-highlight Normal ctermbg=none
-set cursorline
-
-" mapping
-nnoremap <C-c> :<C-u>set cursorline!<CR>
