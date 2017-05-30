@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# tmux
-if [ $SHLVL = 1 ]; then
-	alias tmux="tmux attach || tmux new-session \; source-file ~/.tmux_session"
-fi
-
 # Path to the bash it configuration
 export BASH_IT="/Users/kazurri/.bash_it"
 

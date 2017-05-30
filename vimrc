@@ -32,9 +32,5 @@ map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
 " Color
-" https://github.com/tomasr/molokai
-" git clone https://github.com/tomasr/molokai
-" mkdir .vim/colors
-" cp -r molokai/colors/molokai.vim .vim/colors/molokai.vim
-colorscheme molokai
+colorscheme pablo
 highlight Normal ctermbg=none
