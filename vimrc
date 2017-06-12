@@ -27,10 +27,12 @@ set pastetoggle=<F11>
 " Indentation options
 set shiftwidth=4
 set tabstop=4
+
 " Mappings
 map Y y$
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
+
 " Color
 colorscheme pablo
 highlight Normal ctermbg=none
