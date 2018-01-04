@@ -1,11 +1,11 @@
-" dein.vim
+" sh ./installer.sh ~/.config/dein
 if 0 | endif
 if &compatible
 	set nocompatible
 endif
-set runtimepath+=/Users/kazurri/.config/nvim/plugin/repos/github.com/Shougo/dein.vim
-if dein#load_state('/Users/kazurri/.config/nvim/plugin')
-	call dein#begin('/Users/kazurri/.config/nvim/plugin')
+set runtimepath+=~/.config/dein/repos/github.com/Shougo/dein.vim
+if dein#load_state('~/.config/dein')
+	call dein#begin('~/.config/dein')
 	call dein#add('Shougo/dein.vim')
 	call dein#add('Shougo/neosnippet.vim')
 	call dein#add('Shougo/neosnippet-snippets')
@@ -65,6 +65,5 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 
-" Indent Guide
+" Indent Guides
 let g:indent_guides_enable_on_vim_startup = 1
-
