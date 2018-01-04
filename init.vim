@@ -1,3 +1,5 @@
+" dein.vim
+" curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 " sh ./installer.sh ~/.config/dein
 if 0 | endif
 if &compatible
@@ -6,7 +8,7 @@ endif
 set runtimepath+=~/.config/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.config/dein')
 	call dein#begin('~/.config/dein')
-	call dein#add('Shougo/dein.vim')
+	call dein#add('~/.config/dein/repos/github.com/Shougo/dein.vim')
 	call dein#add('Shougo/neosnippet.vim')
 	call dein#add('Shougo/neosnippet-snippets')
 	call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
