@@ -8,7 +8,7 @@ endif
 set runtimepath+=~/.config/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.config/dein')
 	call dein#begin('~/.config/dein')
-	call dein#add('~/.config/dein/repos/github.com/Shougo/dein.vim')
+	call dein#add('Shougo/dein.vim')
 	call dein#add('Shougo/neosnippet.vim')
 	call dein#add('Shougo/neosnippet-snippets')
 	call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
