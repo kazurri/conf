@@ -22,9 +22,6 @@ set -g status-keys vi
 setw -g mode-keys vi
 set -sg escape-time 0
 
-# for macos
-#set -g default-command "reattach-to-user-namespace -l ${SHELL}"
-
 set -g default-terminal screen-256color
 
 # Bindings
@@ -61,10 +58,7 @@ set -g status-bg colour236
 set -g status-attr default
 set -g status-interval 5
 set -g status-left "#[fg=colour255,bg=colour241] #S #[fg=default,bg=default]  "
-# for macos
-#set -g status-right "#h | #($HOME/bin/weather)#[fg=default] | #($HOME/bin/battery)#[fg=default] | %Y/%m/%d %H:%M "
-# for linux
-set -g status-right "#h | %Y/%m/%d %H:%M "
+set -g status-right "#h | %a %b %d %H:%M "
 set -g status-right-length 90
 
 # Window titles
