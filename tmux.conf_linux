@@ -28,8 +28,7 @@ set -g default-terminal screen-256color
 bind r source-file ~/.tmux.conf \; display "configuration reloaded."
 bind C-s choose-session
 
-bind C-c run "tmux save-buffer - | pbcopy"
-bind C-v run "tmux set-buffer \"$(pbpaste)\"; tmux paste-buffer"
+bind C-c run "xsel -bi"
 
 bind | split-window -h
 bind - split-window -v
