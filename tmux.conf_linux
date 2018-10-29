@@ -10,9 +10,9 @@ set -g allow-rename off
 set -g renumber-windows off
 set -g history-limit 10000
 
-# for tmux 2.1
+# for tmux >2.1
 #setw -g mouse on
-# for tmux 2.0
+# for tmux <2.0
 setw -g mode-mouse on
 set -g mouse-select-pane on
 set -g mouse-select-window on
@@ -53,10 +53,10 @@ bind -r L resize-pane -R 5
 # Color
 # Status bar
 set -g status-fg colour247
-set -g status-bg colour236
+set -g status-bg colour234
 set -g status-attr default
 set -g status-interval 5
-set -g status-left "#[fg=colour255,bg=colour241] #S #[fg=default,bg=default]  "
+set -g status-left "#[fg=colour255,bg=colour238] #S #[fg=default,bg=default]  "
 set -g status-right "#h | %a %b %d %H:%M "
 set -g status-right-length 90
 
@@ -66,17 +66,17 @@ setw -g window-status-bg default
 setw -g window-status-attr dim
 
 # Active window title
-setw -g window-status-current-fg colour190
+setw -g window-status-current-fg colour51
 setw -g window-status-current-bg default
 setw -g window-status-current-attr bright
 
 # Pane border
-set -g pane-border-fg colour233
+set -g pane-border-fg colour234
 set -g pane-active-border-fg colour236
 
 # Message text
 set -g message-bg default
-set -g message-fg colour190
+set -g message-fg colour10
 
 # Pane number display
 set -g display-panes-active-colour colour10
