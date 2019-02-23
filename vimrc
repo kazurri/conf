@@ -30,6 +30,7 @@ set tabstop=4
 
 " Mappings
 map Y y$
+vmap <LeftRelease> "*ygv
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
 
