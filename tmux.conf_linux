@@ -43,8 +43,9 @@ bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
 
 # - copy and paste
-bind -T copy-mode-vi v send -X begin-selection
-bind -T copy-mode-vi y send -X copy-pipe "xsel -bi"
+setw -g mode-keys vi
+#bind -T copy-mode-vi v send -X begin-selection
+#bind -T copy-mode-vi y send -X copy-pipe "xsel -bi"
 bind C-c run "tmux save-buffer - | xsel -bi"
 bind C-v run "tmux set-buffer \"$(pbpaste)\"; tmux paste-buffer"`
 
