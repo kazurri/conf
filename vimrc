@@ -35,5 +35,5 @@ nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
 
 " Color
-colorscheme pablo
+colorscheme elflord
 highlight Normal ctermbg=none
