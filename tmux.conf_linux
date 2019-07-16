@@ -6,17 +6,13 @@ bind C-b send-prefix
 # Settings
 set -g base-index 1
 setw -g pane-base-index 1
-set -g allow-rename off
 set -g renumber-windows off
-set -g history-limit 10000
-
-# - for tmux 2.0
+# - for tmux <2.0
 setw -g mode-mouse on
 set -g mouse-select-pane on
 set -g mouse-select-window on
 set -g mouse-resize-pane on
-
-# - for tmux 2.1 
+# - for tmux >2.1 
 #setw -g mouse on
 
 set -sg escape-time 0

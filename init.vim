@@ -57,13 +57,13 @@ set tabstop=4
 
 " Mappings
 map Y y$
-vmap <LeftRelease> "*ygv
+"vmap <LeftRelease> "*ygv
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
 
 " Color
 colorscheme molokai
-highlight Normal ctermbg=none
+highlight Normal ctermbg=NONE
 
 " The NERDTree
 autocmd StdinReadPre * let s:std_in=1
