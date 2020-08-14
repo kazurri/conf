@@ -1,23 +1,24 @@
-" dein.vim
-" curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-" sh ./installer.sh ~/.config/dein
+" vim
+" install:
+"   curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+"   sh ./installer.sh ~/.cache/dein
+
 if 0 | endif
 if &compatible
 	set nocompatible
 endif
-set runtimepath+=~/.config/dein/repos/github.com/Shougo/dein.vim
-if dein#load_state('~/.config/dein')
-	call dein#begin('~/.config/dein')
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
+if dein#load_state('~/.cache/dein')
+	call dein#begin('~/.cache/dein')
 	call dein#add('Shougo/dein.vim')
 	call dein#add('Shougo/neosnippet.vim')
 	call dein#add('Shougo/neosnippet-snippets')
 	call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
+	call dein#add('joshdick/onedark.vim')
 	call dein#add('itchyny/lightline.vim')
+	call dein#add('edkolev/tmuxline.vim')
 	call dein#add('scrooloose/nerdtree')
-	call dein#add('ryanoasis/vim-devicons')
-	call dein#add('tomasr/molokai')
-	call dein#add('nathanaelkane/vim-indent-guides')
-	call dein#add('tiagofumo/vim-nerdtree-syntax-highlight')
+	call dein#add('Yggdroot/indentLine')
 	call dein#end()
 	call dein#save_state()
 endif
@@ -52,23 +53,40 @@ set number
 set notimeout ttimeout ttimeoutlen=200
 set pastetoggle=<F11>
 " Indentation options
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Mappings
 map Y y$
-"vmap <LeftRelease> "*ygv
+vmap <LeftRelease> "*ygv
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
 
 " Color
-colorscheme molokai
+colorscheme onedark
 highlight Normal ctermbg=NONE
 
-" The NERDTree
+" lightline
+let g:lightline = {'colorscheme':'one'}
+
+" tmuxline
+" usage:
+"   Tmuxline
+"   TmuxlineSnapshot ~/.tmuxline.conf
+let g:tmuxline_preset = {
+	\ 'a'    : '#S',
+	\ 'b'    : '#W',
+	\ 'c'    : '#T',
+	\ 'win'  : '#I #W',
+	\ 'cwin' : '#I #W',
+	\ 'x'    : ['#{cpu_icon}#{cpu_percentage}','#{battery_icon}#{battery_percentage}','#{weather}'],
+	\ 'y'    : '%R',
+	\ 'z'    : '#H',
+	\ }
+let g:tmuxline_powerline_separators = 0
+let g:tmuxline_theme = 'lightline'
+
+" NERDTree
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
-
-" Indent Guides
-let g:indent_guides_enable_on_vim_startup = 1
