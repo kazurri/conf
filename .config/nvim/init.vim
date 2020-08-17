@@ -1,4 +1,4 @@
-" vim
+" dein
 " install:
 "   curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 "   sh ./installer.sh ~/.cache/dein
@@ -79,10 +79,10 @@ let g:tmuxline_preset = {
 	\ 'c'    : '#T',
 	\ 'win'  : '#I #W',
 	\ 'cwin' : '#I #W',
-	\ 'x'    : ['#{cpu_icon}#{cpu_percentage}','#{battery_icon}#{battery_percentage}','#{weather}'],
+	\ 'x'    : ['#{battery_icon} #{battery_percentage}','#{weather}'],
 	\ 'y'    : '%R',
-	\ 'z'    : '#H',
-	\ }
+	\ 'z'    : '#h',
+\ }
 let g:tmuxline_powerline_separators = 0
 let g:tmuxline_theme = 'lightline'
 
