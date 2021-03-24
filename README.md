@@ -6,8 +6,8 @@ my dotfiles
 ## Installation
 
 ```bash
-$ cp .tmux.conf ~/
-$ cp -r .config ~/
+$ cp -p .tmux.conf ~/
+$ cp -pr .config ~/
 ```
 
 ## License
