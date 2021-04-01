@@ -90,9 +90,9 @@ defx = '''
 '''
 
 [[plugins]]
-repo = 'joshdick/onedark.vim'
+repo = 'rakr/vim-one'
 hook_add = '''
-  autocmd MyAutoCmd VimEnter * nested colorscheme onedark
+  autocmd MyAutoCmd VimEnter * nested colorscheme one
 '''
 
 [[plugins]]
@@ -104,7 +104,7 @@ repo = 'tpope/vim-fugitive'
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 depends = ['lightline-bufferline']
-hook_source = '''
+hook_add = '''
   let g:lightline = {'colorscheme': 'one'}
   let g:lightline.active = {}
   let g:lightline.active.left = [['mode','paste'], ['gitbranch','readonly','filename','modified']]
