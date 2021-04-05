@@ -1,3 +1,4 @@
+# neovim
 set -gx XDG_CACHE_HOME $HOME/.cache
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_RUNTIME_DIR $HOME/.tmp
@@ -8,3 +9,6 @@ switch (uname)
     set -gx LDFLAGS "-L/usr/local/opt/ruby/lib"
     set -gx CPPFLAGS "-I/usr/local/opt/ruby/include"
 end
+
+# ghq
+set -g fish_user_paths "$HOME/go/bin" $fish_user_paths
