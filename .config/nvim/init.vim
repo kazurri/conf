@@ -56,8 +56,13 @@ set smartcase
 
 " mappings
 let g:mapleader = "\<Space>"
-nnoremap <Leader>q :q<CR>
-nnoremap <Leader>w :w<CR>
+nnoremap <leader>f :<C-u>Files<CR>
+nnoremap <leader>g :<C-u>GFiles<CR>
+nnoremap <leader>G :<C-u>GFiles?<CR>
+nnoremap <leader>b :<C-u>Buffers<CR>
+nnoremap <leader>F :<C-u>Defx<CR>
 nnoremap <Esc><Esc> :<C-u>set nohlsearch!<CR>
 nnoremap <C-c> :<C-u>set cursorline!<CR>
+nnoremap <C-w> :<C-u>bd<CR>
+nnoremap <C-q> :<C-u>q<CR>
 vmap <LeftRelease> "*ygv
