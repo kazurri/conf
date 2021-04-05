@@ -1,3 +1,4 @@
+# defx
 [[plugins]]
 repo = 'kristijanhusak/defx-git'
 hook_source = '''
