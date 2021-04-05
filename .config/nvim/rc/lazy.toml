@@ -22,9 +22,6 @@ hook_source = '''
 [[plugins]]
 repo = 'Shougo/defx.nvim'
 depends = ['defx-icons','defx-git']
-hook_add = '''
-  nnoremap <silent> <Space>f :<C-u>Defx<CR>
-'''
 hook_source = '''
   function! Root(path) abort
     return fnamemodify(a:path, ':t')
@@ -36,6 +33,7 @@ hook_source = '''
   call defx#custom#option('_', {
     \ 'columns': 'mark:indent:icons:filename:git',
     \ 'show_ignored_files': 1,
+    \ 'split': 'floating',
     \ })
 '''
 [plugins.ftplugin]
