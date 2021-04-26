@@ -1,28 +1,28 @@
 # exa
 if type -q exa
   alias ls 'exa --icons'
-  alias ll 'exa -lh --git --icons'
-  alias la 'exa -alh --git --icons'
-  alias l 'exa --icons'
+  alias la 'exa -a --icons'
+  alias ll 'exa -lh --icons --git'
+  alias lt 'exa -lh --icons --sort modified --git
 else
   switch (uname)
     case Linux
-      alias ls 'ls --color=auto'
-      alias la 'ls -A'
+      alias ls 'ls -CF --color=auto'
+      alias la 'ls -ACF --color=auto'
       alias ll 'ls -alF'
-      alias l 'ls -CF'
+      alias lt 'ls -lrt'
   end
 end
 
 # bat
 if type -q bat
-  alias less 'bat -p'
   alias cat 'bat -pp'
+  alias less 'bat -p'
 end
 if type -q batcat
   alias bat 'batcat'
+  alias cat 'batcat -p'
   alias less 'batcat -p'
-  alias cat 'batcat -pp'
 end
 
 # ripgrep
