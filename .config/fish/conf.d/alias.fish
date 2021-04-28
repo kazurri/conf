@@ -14,12 +14,12 @@ end
 
 # bat
 if type -q bat
-  alias cat 'bat -p'
+  alias cat 'bat -p --paging never'
   alias less 'bat'
 end
 if type -q batcat
   alias bat 'batcat'
-  alias cat 'batcat -p'
+  alias cat 'batcat -p --paging never'
   alias less 'batcat'
 end
 
