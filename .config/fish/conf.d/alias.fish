@@ -1,39 +1,37 @@
 # exa
 if type -q exa
   alias ls 'exa --icons'
-  alias la 'exa -a --icons'
   alias ll 'exa -lh --icons --git'
   alias lt 'exa -lh --icons --sort modified --git
 else
   switch (uname)
     case Linux
       alias ls 'ls -CF --color=auto'
-      alias la 'ls -ACF --color=auto'
-      alias ll 'ls -alF'
+      alias ll 'ls -lF'
       alias lt 'ls -lrt'
   end
 end
 
 # bat
 if type -q bat
-  alias cat 'bat -pp'
-  alias less 'bat -p'
+  alias cat 'bat -p'
+  alias less 'bat'
 end
 if type -q batcat
   alias bat 'batcat'
   alias cat 'batcat -p'
-  alias less 'batcat -p'
+  alias less 'batcat'
 end
 
 # ripgrep
 if type -q rg
   alias grep 'rg'
-  alias fgrep 'rg -F'
   alias egrep 'rg'
+  alias fgrep 'rg -F'
 else
   alias grep 'grep --color=auto'
-  alias fgrep 'fgrep --color=auto'
   alias egrep 'egrep --color=auto'
+  alias fgrep 'fgrep --color=auto'
 end
 
 # neovim
