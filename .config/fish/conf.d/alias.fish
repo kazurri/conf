@@ -2,7 +2,7 @@
 if type -q exa
   alias ls 'exa --icons'
   alias ll 'exa -lh --icons --git'
-  alias lt 'exa -lh --icons --sort modified --git
+  alias lt 'exa -lh --icons --sort modified --git'
 else
   switch (uname)
     case Linux
