@@ -34,6 +34,11 @@ else
   alias fgrep 'fgrep --color=auto'
 end
 
+# ghq
+if type -q ghq
+  alias g 'cd ( ghq list -p ( ghq list | fzf ) )'
+end
+
 # neovim
 if type -q nvim
   alias vi nvim
