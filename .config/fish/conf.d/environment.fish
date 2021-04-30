@@ -12,6 +12,7 @@ end
 
 # bat
 set -x BAT_THEME "OneHalfDark"
+set -x BAT_STYLE "header,numbers"
 
 # fzf
 set -x FZF_DEFAULT_COMMAND "rg --files --hidden --follow --glob '!.git'"
