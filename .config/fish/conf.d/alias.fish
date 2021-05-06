@@ -23,6 +23,11 @@ if type -q batcat
   alias less 'batcat'
 end
 
+# fd
+if type -q fdfind
+  alias fd 'fdfind'
+end
+
 # ripgrep
 if type -q rg
   alias grep 'rg'
