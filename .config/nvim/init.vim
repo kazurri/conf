@@ -55,9 +55,6 @@ set ignorecase
 set smartcase
 
 " mappings
-nnoremap <C-w> :bd<CR>
-nnoremap <C-q> :q<CR>
-vmap <LeftRelease> "*ygv
 let g:mapleader = "\<Space>"
 nnoremap <leader>f :Files<CR>
 nnoremap <leader>g :GFiles<CR>
@@ -66,4 +63,7 @@ nnoremap <leader>b :Buffers<CR>
 nnoremap <leader>r :Rg<CR>
 nnoremap <leader>R :RG<CR>
 nnoremap <leader>h :History<CR>
-nnoremap <leader>F :Defx<CR>
+nnoremap <C-f> :Defx<CR>
+nnoremap <C-w> :bd<CR>
+nnoremap <C-q> :q<CR>
+vmap <LeftRelease> "*ygv
