@@ -44,6 +44,11 @@ if type -q ghq
   alias g 'cd ( ghq list -p ( ghq list | fzf ) )'
 end
 
+# lazygit
+if type -q lazygit 
+  alias lg 'lazygit'
+end
+
 # neovim
 if type -q nvim
   alias vi nvim
@@ -52,9 +57,9 @@ end
 
 # macos
 if type -q plutil
-  alias plb='plutil -convert binary1'
-  alias plx='plutil -convert xml1'
+  alias plb 'plutil -convert binary1'
+  alias plx 'plutil -convert xml1'
 end
 if type -q defaults
-  alias rlp='defaults write com.apple.dock ResetLaunchPad -bool true ; killall Dock'
+  alias rlp 'defaults write com.apple.dock ResetLaunchPad -bool true ; killall Dock'
 end
